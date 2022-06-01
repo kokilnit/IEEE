@@ -1169,6 +1169,8 @@ body .slider {
 }
 .left-side .gotop img {
   display: block;
+  height: 4rem;
+  width: 20px;
 }
 
 /* SLIDER */
