@@ -55,7 +55,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #25b607;
+  color: #282828;
 }
 
 a:active {
@@ -161,7 +161,6 @@ button[type="submit"]:hover i {
 /* CUSTOM ELEMENTS */
 .color-dark {
   background-color: #282828;
-  
 }
 .color-dark .left-side ul {
   width: 100vh;
@@ -334,7 +333,7 @@ moe
   margin: auto;
   width: 100vw;
   height: 100vh;
-  background: #371B58;
+  background: #282828;
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -361,7 +360,7 @@ moe
   height: 0;
   border-style: solid;
   border-width: 0 200px 100vh 0;
-  border-color: transparent #ff7474 transparent transparent;
+  border-color: transparent #282828 transparent transparent;
   position: absolute;
   left: -200px;
   top: 0;
@@ -661,7 +660,7 @@ body .slider {
   display: block;
   margin-bottom: 20px;
   line-height: 1.7;
-  font-size: 22px;
+  font-size: 25px;
 }
 .navigation-menu .inner h2 strong {
   font-weight: 600;
@@ -1067,88 +1066,6 @@ body .slider {
   margin-right: 0;
   margin-left: 30px;
   
-}
-/*table style*/
-
-table {
-border: 1px solid #ccc;
-border-collapse: collapse;
-margin: 0;
-padding: 0;
-width: 100%;
-table-layout: fixed;
-}
-
-table caption {
-font-size: 1.5em;
-margin: .5em 0 .75em;
-}
-
-table tr {
-background-color: #f8f8f8;
-border: 1px solid #ddd;
-padding: .35em;
-}
-
-table th,
-table td {
-padding: .625em;
-text-align: center;
-}
-
-table th {
-font-size: .85em;
-letter-spacing: .1em;
-text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-table {
-border: 0;
-}
-
-table caption {
-font-size: 1.3em;
-}
-
-table thead {
-border: none;
-clip: rect(0 0 0 0);
-height: 1px;
-margin: -1px;
-overflow: hidden;
-padding: 0;
-position: absolute;
-width: 1px;
-}
-
-table tr {
-border-bottom: 3px solid #ddd;
-display: block;
-margin-bottom: .625em;
-}
-
-table td {
-border-bottom: 1px solid #ddd;
-display: block;
-font-size: .8em;
-text-align: right;
-}
-
-table td::before {
-/*
-* aria-label has no advantage, it won't be read inside a table
-content: attr(aria-label);
-*/
-content: attr(data-label);
-float: left;
-font-weight: bold;
-text-transform: uppercase;
-}
-
-table td:last-child {
-border-bottom: 0;
-}
 }
 
 /* LEFT SIDE */
@@ -2924,4 +2841,98 @@ img {
     margin-bottom: 15px;
   }
 }
-/* animations */
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
